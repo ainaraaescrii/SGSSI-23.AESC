@@ -1,0 +1,23 @@
+# Nombre del archivo de entrada y salida
+archivo_entrada = '/Users/ainaraaescrii/Desktop/CUARTO/SGSSI/Tareas/S5/Tarea_A.5.1.3_2.2/SGSSI-23.CB.01.txt'
+
+
+archivo_salida = '/Users/ainaraaescrii/Desktop/CUARTO/SGSSI/Tareas/S5/Tarea_A.5.1.3_2.2/SGSSI-23.CB.01_con_linea_adicional.txt'
+
+# Leer el contenido del archivo de entrada
+with open(archivo_entrada, 'r') as entrada:
+    contenido = entrada.read()
+
+# Agregar una línea adicional al contenido
+linea_adicional = "Esta es una línea adicional."
+
+# Crear el archivo de salida y escribir el contenido
+with open(archivo_salida, 'w') as salida:
+    salida.write(contenido)
+    salida.write('\n' + linea_adicional)
+
+print(f'Se ha creado el archivo {archivo_salida} con una línea adicional.')
+
+
+
+
